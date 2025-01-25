@@ -5,7 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        gap: 20px;
+    }
+    img {
+        max-width: 400px;
+        max-height: 400px;
+        object-fit: contain;
+    }
+    button {
+        border: 1px solid black;
+        padding: 5px 15px
+    }
+</style>
 <body>
+    <form action="/">
+        <label for="user-input">Search for a gif</label>
+        <input type="text" name="user-input" id="user-input">
+        <button type="submit">Search</button>
+    </form>
     <img class="content"></img>
     <button id="reload">reload</button>
     <script src="index.js"></script>
